@@ -19,3 +19,5 @@ poise_service 'deluge-web' do
   directory '/var/lib/deluged'
   command '/usr/bin/deluge-web -l /var/log/deluged/web.log -L info --ssl -c /var/lib/deluged/config'
 end
+
+# TODO: drop SSL certs if available

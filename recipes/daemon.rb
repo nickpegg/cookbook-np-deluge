@@ -9,7 +9,6 @@ cookbook_file '/etc/default/deluged' do
 
   # Debian workaround, it thinks the daemon is already running even if it's not enabled
   # via /etc/default/deluged
-  puts "HEY PLATFORM #{node['platform']}"
   notifies :restart, 'service[deluged]' if node['platform'] == 'debian'
 end
 
