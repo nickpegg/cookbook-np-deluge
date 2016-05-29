@@ -1,5 +1,6 @@
-# np-deluge
 [![Build Status](https://travis-ci.org/nickpegg/cookbook-np-deluge.svg?branch=master)](https://travis-ci.org/nickpegg/cookbook-np-deluge)
+
+# np-deluge
 
 Sets up Deluge
 
