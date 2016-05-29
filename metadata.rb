@@ -8,6 +8,7 @@ version '0.1.1'
 
 supports 'debian', '~> 8.0'
 supports 'ubuntu', '= 14.04'
+supports 'ubuntu', '= 16.04'
 
 depends 'apt', '~> 2.9.2'
 depends 'poise-service', '~> 1.0'
