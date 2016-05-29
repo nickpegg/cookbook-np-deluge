@@ -7,5 +7,5 @@ machine:
 test:
   override:
     - bundle exec rubocop
-    - bundle exec rspec --color
-    - bundle exec kitchen test -c4
+    - bundle exec rspec --color --deprecation-out /dev/null
+    # - bundle exec kitchen test -c4
