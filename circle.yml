@@ -4,8 +4,14 @@ machine:
   ruby:
     version: 2.3.1
 
+dependencies:
+  pre:
+    - wget -O chefdk.deb https://packages.chef.io/stable/ubuntu/12.04/chefdk_0.14.25-1_amd64.deb
+    - sudo dpkg -i chefdk.deb
+    - chef gem install rspec rubocop kitchen-docker
+
 test:
   override:
-    - bundle exec rubocop
-    - bundle exec rspec --color --deprecation-out /dev/null
+    - chef exec rubocop
+    - chef exec rspec --color --deprecation-out /dev/null
     # - bundle exec kitchen test -c4
