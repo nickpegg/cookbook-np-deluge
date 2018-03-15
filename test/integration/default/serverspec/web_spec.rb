@@ -6,7 +6,6 @@ describe 'np-deluge::web' do
   end
 
   describe service 'deluge-web' do
-    it { is_expected.to be_enabled }
     it { is_expected.to be_running }
   end
 

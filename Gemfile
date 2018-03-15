@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf'
+gem 'chefspec'
+gem 'serverspec'
+gem 'test-kitchen'
+gem 'kitchen-vagrant'
+gem 'kitchen-docker'
+gem 'rubocop'
+gem 'rake'

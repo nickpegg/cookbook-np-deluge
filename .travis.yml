@@ -1,0 +1,15 @@
+language: ruby
+sudo: false
+rvm:
+  - 2.3.1
+cache: bundler
+
+services:
+  - docker
+
+script:
+  - bundle exec rubocop
+  - bundle exec rspec --color --deprecation-out /dev/null
+  - bundle exec kitchen create -c8
+  - bundle exec kitchen converge
+  - bundle exec kitchen verify

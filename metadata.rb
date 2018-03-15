@@ -4,10 +4,11 @@ maintainer_email 'nick@nickpegg.com'
 license 'mit'
 description 'Installs/Configures np-deluge'
 long_description 'Installs/Configures np-deluge'
-version '0.1.0'
+version '0.1.1'
 
 supports 'debian', '~> 8.0'
 supports 'ubuntu', '= 14.04'
+supports 'ubuntu', '= 16.04'
 
 depends 'apt'
 depends 'poise-service', '~> 1.0'
