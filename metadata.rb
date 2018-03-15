@@ -9,5 +9,5 @@ version '0.1.0'
 supports 'debian', '~> 8.0'
 supports 'ubuntu', '= 14.04'
 
-depends 'apt', '~> 2.9.2'
+depends 'apt'
 depends 'poise-service', '~> 1.0'
